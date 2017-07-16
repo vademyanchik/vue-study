@@ -11,16 +11,13 @@
 
 <script>
 export default {
+  props: {
+    ninjas: {
+      type: Array
+    }
+  },
   data () {
     return {
-       ninjas: [
-        { name: 'Ruy', speciality: 'Vue component', show: false },
-        { name: 'Ruys', speciality: 'Vue component', show: false },
-        { name: 'Ruyv', speciality: 'Vue component', show: false },
-        { name: 'Ruye', speciality: 'Vue component', show: false },
-        { name: 'Ruyr', speciality: 'Vue component', show: false },
-        { name: 'Ruyh', speciality: 'Vue component', show: false },
-     ]
     }
   },
 }
