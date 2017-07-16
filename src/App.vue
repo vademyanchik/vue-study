@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header v-bind:title="title"></app-header>
     <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
     <app-footer></app-footer>
   </div>  
@@ -19,14 +19,15 @@ export default {
   },
   data () {
     return {
-       ninjas: [
+      ninjas: [
         { name: 'Ruy', speciality: 'Vue component', show: false },
         { name: 'Ruys', speciality: 'Vue component', show: false },
         { name: 'Ruyv', speciality: 'Vue component', show: false },
         { name: 'Ruye', speciality: 'Vue component', show: false },
         { name: 'Ruyr', speciality: 'Vue component', show: false },
         { name: 'Ruyh', speciality: 'Vue component', show: false },
-     ]
+      ],
+      title: 'Ninja',
     }
   },
   methods: {

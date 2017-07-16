@@ -6,9 +6,14 @@
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String,
+      requred: true,
+    }
+  },
   data () {
     return {
-      title: 'Hello'
     }
   },
 }
